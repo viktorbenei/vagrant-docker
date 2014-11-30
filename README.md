@@ -30,3 +30,9 @@ Every normal vagrant command should work:
 * `$ vagrant ssh` to log into the container through SSH.
 * `$ vagrant halt` stops the container.
 * `$ vagrant destroy` to destroy (remove) the Docker container.
+
+## Notes
+
+* You can use Vagrant's Shared Folder feature pretty much the same as you would with a normal VM
+  * something like: `config.vm.synced_folder "~/steps", "/steps"`
+
