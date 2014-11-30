@@ -4,7 +4,7 @@ vagrant-docker
 Base Vagrant repo to run a Docker container in Vagrant.
 
 Uses the [phusion / baseimage](https://registry.hub.docker.com/u/phusion/baseimage/)
-Docker image which can properly run with Vagrant.
+Docker image which can properly run within Vagrant.
 
 ## How to start / run?
 
