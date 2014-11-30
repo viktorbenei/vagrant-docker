@@ -4,20 +4,20 @@ vagrant-docker
 Base Vagrant repo to run a Docker container in Vagrant.
 
 Uses the [phusion / baseimage](https://registry.hub.docker.com/u/phusion/baseimage/)
-Docker image which can properly run within Vagrant.
+Docker image which can properly run with Vagrant (as a Vagrant "VM").
 
 ## How to start / run?
 
 *Tested in an Ubuntu VM which itself runs in a Vagrant VM on OS X - should also work
-in "barebone" Ubuntu*
+on a "barebone" Ubuntu host.*
 
-0. Install [Docker](https://www.docker.com/) and [Vagrant](https://www.vagrantup.com/)
+0. Install [Docker](https://www.docker.com/) and [Vagrant](https://www.vagrantup.com/) - *install these on the host which will actually run the docker container. If you're not on Linux and you want to run the docker container inside a VM like I do then you have to install Docker and Vagrant **inside** the VM*.
 1. clone this repository
 2. `$ cd` into this directory (the one contains this README file)
 3. `$ vagrant up --provider=docker`
 
 This will download the *phusion/baseimage* docker image if it's not yet
-available on your machine, start it in Docker and
+available on your machine; will start it in Docker and
 configure it to accept ssh connection through *vagrant ssh*.
 
 Once it's ready you can log in the regular way:
